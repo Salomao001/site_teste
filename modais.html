@@ -1,0 +1,199 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Bootstrap Modal - Trybe</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Linkando os arquivos CDN do Bootstrap e alguns scripts básicos -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <!-- Aqui começa nossa página -->
+    <body>
+        <div class="container">
+            <h2>Exemplo: usando o Bootstrap Modal!</h2>
+            <!-- Acionar o Modal com uso de um botão -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Abrir!</button>
+            <!-- Declarando o tipo e detalhes do Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Aqui escrevemos o conteúdo do modal, como opções e detalhes da mensagem-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">O título de nosso Modal deve aparecer aqui!</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Corpo da mensagem -->
+                        <div class="modal-body">
+                            <p>O conteúdo da mensagem enviada ao usuário deverá aparecer aqui. Avisos, considerações e o que mais você precisar.</p>
+                            <p>Você poderá inserir detalhes. <i>Lembrando que você poderá estilizar a fonte seu conteúdo.</i></p>
+                        </div>
+                        <!-- O prompt da mensagem do Modal deverá estar aqui — é o rodapé do modal-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                            <button type="button" class="btn btn-primary">Assine aqui nosso produto!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <div class="container">
+            <h2>Modal pequeno, exemplo de uso</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">Open Small Modal</button>
+            <!-- Início do Modal -->
+            <div class="modal fade" id="myModal2" role="dialog">
+                <!-- Aqui adicionamos a classe que deixa o Modal pequeno: -->
+                <div class="modal-dialog modal-sm">
+                    <!-- Os conteúdos internos vêm aqui: -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">O Header está aqui</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal de tamanho pequeno</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Modal grande, exemplo de uso</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Open Big   Modal</button>
+            <!-- Início do Modal -->
+            <div class="modal fade" id="myModal3" role="dialog">
+                <!-- Aqui adicionamos a classe que deixa o Modal pequeno: -->
+                <div class="modal-dialog modal-lg">
+                    <!-- Os conteúdos internos vêm aqui: -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">O Header está aqui</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal de tamanho grande</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Modal Tooltips e Popovers, exemplo de uso</h2>
+            <!-- Trigger the modal with a button -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4">Open tooltips e popover</button>
+            <!-- Início do Modal -->
+            <div class="modal fade" id="myModal4" role="dialog">
+                <!-- Aqui adicionamos a classe que deixa o Modal pequeno: -->
+                <div class="modal-dialog modal-lg">
+                    <!-- Os conteúdos internos vêm aqui: -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalLongo">Modal centralizado verticalmente, popover e tooltips </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Popover Bootstrap Modal</h5>
+                            <p>Este <a href="#" role="button" class="btn btn-secondary popover-test" title="Título do popover" data-content="Conteúdo do popover">botão</a> Aciona um popover ao clicar</p>
+                            <h5>Tooltips</h5>
+                            <p> <a href="#" class="tooltip-test" title="Tooltip">Este link</a> mostra tooltips — passe o mouse sobre!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Exemplo: editando o Bootstrap Modal!</h2>
+            <!-- Acionar o Modal com uso de um botão -->
+            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Abrir!</button>
+            <!-- Declarando o tipo e detalhes do Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Aqui escrevemos o conteúdo do modal, como opções e detalhes da mensagem-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">O título de nosso Modal deve aparecer aqui!</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <!-- Corpo da mensagem -->
+                        <div class="modal-body">
+                            <p>O conteúdo da mensagem enviada ao usuário deverá aparecer aqui. Avisos, considerações e o que mais você precisar.</p>
+                            <p>Você poderá inserir detalhes. <i>Lembrando que você poderá estilizar a fonte seu conteúdo.</i></p>
+                        </div>
+                        <!-- O prompt da mensagem do Modal deverá estar aqui — é o rodapé do modal-->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Sair</button>
+                            <button type="button" class="btn btn-primary">Assine aqui nosso produto!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2>Exemplo: colocando o modalDados da outra página!</h2>
+                <!-- Acionar o Modal com uso de um botão -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalDados">Abrir!</button>
+                <!-- Declarando o tipo e detalhes do Modal -->
+                <div class="modal fade" id="modalDados" tabindex="-1" aria-labelledby="exampleModalLabel" >
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Salvar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+
+
+            <div class="container">
+                <h2>Exemplo: Salomao!</h2>
+                <!-- Acionar o Modal com uso de um botão -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalsalomao">Abrir!</button>
+            </div>
+
+
+    </body>
+</html>
+
+
+
+
+<div class="modal fade" id="modalsalomao" tabindex="-1" aria-labelledby="exampleModalLabel" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal salobas</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>  
